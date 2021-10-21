@@ -139,6 +139,8 @@ botonRadio.addEventListener('click', () => {
         document.querySelector('#horasDe').innerHTML = 'Horas Radiología:'
         document.querySelector('#tablaHoras').innerHTML += rayos;
     };
+
+    document.querySelector('.primeraAtencion').innerHTML = `Primera atención: ${radiologia[0].paciente} - ${radiologia[0].prevision} | Última atención: ${radiologia[radiologia.length - 1].paciente} - ${radiologia[radiologia.length - 1].prevision} `; 
 });
 
 botonTrauma.addEventListener('click', () => {
@@ -157,6 +159,8 @@ botonTrauma.addEventListener('click', () => {
         document.querySelector('#horasDe').innerHTML = 'Horas Traumatología:'
         document.querySelector('#tablaHoras').innerHTML += trauma;
     };
+
+    document.querySelector('.primeraAtencion').innerHTML = `Primera atención: ${traumatologia[0].paciente} - ${traumatologia[0].prevision} | Última atención: ${traumatologia[traumatologia.length - 1].paciente} - ${traumatologia[traumatologia.length - 1].prevision} `; 
 });
 
 botonDental.addEventListener('click', () => {
@@ -175,5 +179,7 @@ botonDental.addEventListener('click', () => {
         document.querySelector('#horasDe').innerHTML = 'Horas Dental:'
         document.querySelector('#tablaHoras').innerHTML += dent;
     };
+
+    document.querySelector('.primeraAtencion').innerHTML = `Primera atención: ${dental[0].paciente} - ${dental[0].prevision} | Última atención: ${dental[dental.length - 1].paciente} - ${dental[dental.length - 1].prevision} `; 
 });
 
